@@ -1,0 +1,278 @@
+---------------------- Phase 1 : Python Fundamentals (Week 1-2) ----------------------
+Topics:
+
+Installing Python
+VS Code
+IDLE
+Variables
+Data Types
+Operators
+Input Output
+Comments
+Type Casting
+String Formatting
+Collections
+List
+Tuple
+Set
+Dictionary
+
+Control Flow
+
+if
+if else
+elif
+nested if
+
+Loops
+
+for
+while
+break
+continue
+pass
+
+Functions
+
+parameters
+return
+default arguments
+keyword arguments
+*args
+**kwargs
+
+Documentation:
+Official Python Tutorial:
+https://docs.python.org/3/tutorial/
+
+Practice Questions:
+https://www.hackerrank.com/domains/python
+Solve:
+10-15 questions.
+---------------------- Week 3 : OOP ----------------------
+Week 3 : OOP
+
+Topics:
+Classes
+Objects
+Constructor
+Inheritance
+Encapsulation
+Abstraction
+Polymorphism
+Magic Methods
+@property
+Static Method
+Class Method
+Dataclasses
+
+Practice:
+Create - 
+Employee Management System
+Student Management System
+Library Management
+---------------------- Week 4 : Advanced Python ----------------------
+Topics:
+
+Lambda
+Map
+Filter
+Reduce
+List Comprehension
+Dictionary Comprehension
+Set Comprehension
+Generators
+Yield
+Decorators
+Closures
+Iterators
+Context Manager
+Enums
+Typing
+Match Case
+
+Project:
+Bank Application
+---------------------- Week 5 : Exception Handling ----------------------
+Topics:
+
+try
+except
+finally
+raise
+Custom Exception
+Logging
+File Handling
+CSV
+JSON
+XML
+Pathlib
+os
+shutil
+zipfile
+tempfile
+
+Mini Project:
+Log Analyzer
+---------------------- Week 6 : Modules ----------------------
+Topics:
+
+Modules
+Packages
+pip
+venv
+requirements.txt
+Poetry
+PIPENV
+Import System
+
+Project:
+Create your own package
+Publish locally
+---------------------- Week 7 : Database ----------------------
+SQLite
+MySQL
+PostgreSQL
+SQLAlchemy
+ORM
+Alembic
+CRUD
+Transactions
+
+Mini Project:
+Employee CRUD
+---------------------- Week 8 : FastAPI ----------------------
+Since you're already a .NET Web API developer,
+this will feel familiar.
+
+Topics:
+
+Routing
+Dependency Injection
+Pydantic
+Validation
+Authentication
+JWT
+Swagger
+Middleware
+Background Tasks
+Dependency Injection
+Response Models
+Exception Handling
+
+Project:
+Employee REST API
+---------------------- Week 9 : Async Programming ----------------------
+Topics:
+
+async
+await
+asyncio
+aiohttp
+Concurrency
+Parallelism
+Task Groups
+
+Mini Project:
+Download multiple URLs simultaneously
+---------------------- Week 10 : Testing ----------------------
+Topics:
+
+pytest
+unittest
+Mocking
+Fixtures
+Coverage
+Integration Testing
+API Testing
+
+---------------------- Week 11 : Advanced Python ----------------------
+Topics:
+
+Threading
+Multiprocessing
+Caching
+Memory Management
+Garbage Collection
+Descriptors
+Metaclasses
+Collections Module
+functools
+itertools
+heapq
+bisect
+
+---------------------- Week 12 : Deployment ----------------------
+Docker
+Gunicorn
+Uvicorn
+NGINX
+Azure App Service
+Linux
+CI/CD
+GitHub Actions
+
+---------------------- Study material ----------------------
+
+YouTube Channels:
+
+Corey Schafer
+Programming with Mosh
+freeCodeCamp
+Tech With Tim
+Arjan Codes
+
+---------------------- Websites ----------------------
+
+Official Docs
+
+https://docs.python.org
+
+Real Python
+
+https://realpython.com
+
+GeeksforGeeks
+
+https://geeksforgeeks.org
+
+Python Cheatsheet
+
+https://www.pythoncheatsheet.org
+
+---------------------- Practice Websites ----------------------
+LeetCode
+HackerRank
+Codewars
+Exercism
+---------------------- Projects (Must Build) ----------------------
+Calculator
+Todo App
+Contact Book
+Library Management
+Employee CRUD
+Expense Tracker
+REST API
+JWT Authentication
+File Upload API
+Chat Application
+Web Scraper
+Weather App
+URL Shortener
+Blog API
+E-Commerce Backend
+
+------------------------------------------------------------------
+Since you are already a senior .NET developer...
+
+I recommend focusing on learning Python the way experienced backend engineers use it, not just the language syntax. Once you're comfortable with the basics, prioritize:
+
+Writing clean, Pythonic code (PEP 8, comprehensions, context managers, type hints).
+Building REST APIs with FastAPI.
+Working with SQLAlchemy, Alembic, and Pydantic.
+Async programming with asyncio.
+Testing with pytest.
+Packaging, virtual environments, and dependency management.
+Dockerizing Python applications and deploying them to Azure or other cloud platforms.
+
+This approach will let you leverage your existing experience in .NET while becoming productive in Python much faster.
