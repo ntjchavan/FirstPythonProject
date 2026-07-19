@@ -4,6 +4,7 @@ print("data type of variable age: ", type(age))
 
 number = 123456789123456789123456789123456789
 print(number)
+print(f"data type of number {number} is ", type(number));
 
 a = 20
 b = 5
