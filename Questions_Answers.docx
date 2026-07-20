@@ -1,0 +1,58 @@
+Q1. What is a Variable?
+
+A variable is a named location in memory used to store a value.
+
+name = "Netaji"
+age = 32
+salary = 75000.50
+
+Q2. What is a Data Type?
+A data type defines:
+
+What kind of value a variable can hold.
+What operations can be performed on that value.
+
+Q3. What is the difference between type() and isinstance()?
+type(obj): returns the exact type of an object.
+isinstance(obj, Type): checks whether an object is an instance of a type or its subclasses, making it more flexible and the preferred choice in most code.
+
+Q4. Is Python statically typed or dynamically typed?
+
+Python is dynamically typed, meaning you don't declare variable types explicitly, and a variable can reference objects of different types during execution.
+
+Note: Python Tip (Very Important)
+
+Unlike C#, Python has only a handful of fundamental data types, and everything is an object, including integers, strings, and booleans. This consistent object model is one of the reasons Python feels simple yet powerful.
+
+Q5. What is an Operator?
+
+An operator is a symbol that performs an operation on one or more operands.
+
+Q6. Identity Operators
+
+These are unique to Python and are frequently asked in interviews.
+
+is: Checks whether two variables refer to the same object.
+
+Q7. What is the difference between == and is?
+==: Compares values
+is: Compares object identity (same object in memory)
+
+Q8. what is Membership Operators in Python?
+
+These check whether a value exists in a sequence.
+
+Notes on list: Key Takeaways
+Lists store multiple values.
+Lists are ordered.
+Lists are mutable.
+Indexing starts at 0.
+Negative indexes access items from the end.
+append() adds one item.
+extend() adds multiple items.
+remove() removes by value.
+pop() removes by index.
+sort() modifies the original list.
+sorted() returns a new sorted list.
+copy() prevents accidental reference sharing.
+List comprehensions provide concise transformations and filtering.
