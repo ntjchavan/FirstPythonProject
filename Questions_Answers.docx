@@ -39,8 +39,24 @@ Q7. What is the difference between == and is?
 is: Compares object identity (same object in memory)
 
 Q8. what is Membership Operators in Python?
-
 These check whether a value exists in a sequence.
+
+Q9. What is a Tuple?
+A tuple is an ordered collection of items, just like a list, but immutable.
+
+Q10. Why Use Tuples?
+If the data should never change.
+
+Q12. Tuple Methods
+Unlike lists, tuples have only two commonly used methods.
+
+Q13. What is Sets?
+A set stores unique values.
+A set is an unordered collection of unique elements.
+Sets do not support indexing.
+
+Q14. What is Frozen Sets?
+A frozenset is an immutable set.
 
 Notes on list: Key Takeaways
 Lists store multiple values.
