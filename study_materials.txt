@@ -50,9 +50,8 @@ https://www.hackerrank.com/domains/python
 Solve:
 10-15 questions.
 ---------------------- Week 3 : OOP ----------------------
-Week 3 : OOP
+Week 3 : Topics:
 
-Topics:
 Classes
 Objects
 Constructor
