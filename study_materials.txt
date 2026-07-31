@@ -68,7 +68,27 @@ Dataclasses
 Practice:
 Create - 
 Employee Management System
-Student Management System
+    Phase 1:
+        Design the Employee class
+        Create Employee objects
+        Store employees in a list
+        Display employees
+    Phase 2:
+        Search employee
+        Update employee
+        Delete employee
+    Phase 3:
+        Inheritance
+        Full-Time Employee
+        Part-Time Employee
+    Phase 4:
+        Polymorphic salary calculation
+    Phase 5:
+        File saving/loading
+    Phase 6:
+        Final menu-driven application
+Student Management System:
+Next Project Recommendation - Student Management System.
 Library Management
 ---------------------- Week 4 : Advanced Python ----------------------
 Topics:
