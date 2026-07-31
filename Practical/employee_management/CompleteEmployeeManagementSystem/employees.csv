@@ -1,0 +1,7 @@
+Employee ID,Name,Department,Type,Salary
+101,Netaji,IT,FullTimeEmployee,600000
+102,Amit,Support,PartTimeEmployee,9000
+103,Bob,Support,ContractEmployee,55000
+104,Alice,IT,FullTimeEmployee,1464000.0
+105,Charlie,Account,PartTimeEmployee,12600.0
+106,Shivam,HR,ContractEmployee,105000.0

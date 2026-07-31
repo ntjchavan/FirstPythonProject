@@ -6,6 +6,7 @@ manager = EmployeeManager()
 manager.load_employees()
 print("============ Employee Management System ============")
 while True:
+    print("\n")
     print("1. Add Employees")
     print("2. View Employees")
     print("3. Search Employees")
@@ -13,9 +14,12 @@ while True:
     print("5. Total Payroll Employees")
     print("6. Highest Paid Employee")
     print("7. Save Employee")
-    print("8. Exit: ")
+    print("8. Salary Report")
+    print("9. Sort by Name")
+    print("10. Export to CSV")
+    print("11. Exit: ")
 
-    choice = int(input("Enter your choice: "))
+    choice = int(input("\nEnter your choice: "))
 
     if choice == 1:
         employee = None
@@ -40,7 +44,9 @@ while True:
         else:
             print("Invalid Employee Type")
 
-        if employee:
+        if manager.search_employee(emp_id):
+            print(f"\nEmployee with ID {emp_id} already exists!")
+        elif employee:
             manager.add_employees(employee)
 
     elif choice == 2:
@@ -69,9 +75,19 @@ while True:
         manager.save_data()
 
     elif choice == 8:
+        manager.salary_report()
+
+    elif choice == 9:
+        manager.sort_by_name()
+        manager.view_employees()
+
+    elif choice == 10:
+        manager.export_to_csv()
+
+    elif choice == 11:
         print("Good bye!")
         break
 
     else:
-        print("Invalid choice, please enter choice between 1-8")
+        print("Invalid choice, please enter choice between 1-9")
 
