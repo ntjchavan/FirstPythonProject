@@ -1,0 +1,48 @@
+[
+    {
+        "type": "FullTimeEmployee",
+        "emp_id": 101,
+        "name": "Netaji",
+        "department": "IT",
+        "monthly_salary": 50000
+    },
+    {
+        "type": "PartTimeEmployee",
+        "emp_id": 102,
+        "name": "Amit",
+        "department": "Support",
+        "hourly_rate": 90,
+        "hours_worked": 100
+    },
+    {
+        "type": "ContractEmployee",
+        "emp_id": 103,
+        "name": "Bob",
+        "department": "Support",
+        "project_name": "Bank modernization",
+        "project_fee": 55000
+    },
+    {
+        "type": "FullTimeEmployee",
+        "emp_id": 104,
+        "name": "Alice",
+        "department": "IT",
+        "monthly_salary": 122000.0
+    },
+    {
+        "type": "PartTimeEmployee",
+        "emp_id": 105,
+        "name": "Charlie",
+        "department": "Account",
+        "hourly_rate": 105.0,
+        "hours_worked": 120.0
+    },
+    {
+        "type": "ContractEmployee",
+        "emp_id": 106,
+        "name": "Shivam",
+        "department": "HR",
+        "project_name": "Human resource management",
+        "project_fee": 105000.0
+    }
+]
