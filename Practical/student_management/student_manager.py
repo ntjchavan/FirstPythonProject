@@ -96,3 +96,36 @@ class StudentManager:
 
         student.report_card()
         
+    def topper(self):
+        if not self.students:
+            print("No students found.")
+            return
+
+        return max(self.students, key=lambda student: student.percentage)
+
+    # # OR
+    # def topper(self):
+    #     if not self.students:
+    #         return None
+
+    #     topper = self.students[0]
+    #     for student in self.students:
+    #         if student.percentage > topper.percentage:
+    #             topper = student
+    #     return topper
+
+    def pass_percentage(self):
+        if not self.students:
+            print("No students found.")
+            return
+
+        passed = 0
+
+        for student in self.students:
+            print(student.name, student.percentage, student.is_passed)
+            if student.is_passed:
+                passed += 1
+
+        return (
+            passed / len(self.students)
+        ) * 100

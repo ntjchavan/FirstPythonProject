@@ -1,0 +1,42 @@
+[
+    {
+        "student_id": 1,
+        "name": "Netaji",
+        "age": 23,
+        "student_class": "BCA",
+        "section": "A",
+        "marks": {
+            "Maths": 93.0
+        }
+    },
+    {
+        "student_id": 2,
+        "name": "Bob",
+        "age": 21,
+        "student_class": "BSc",
+        "section": "C",
+        "marks": {
+            "Physics": 89.0
+        }
+    },
+    {
+        "student_id": 3,
+        "name": "Alice",
+        "age": 25,
+        "student_class": "BCA",
+        "section": "B",
+        "marks": {
+            "Management": 82.0
+        }
+    },
+    {
+        "student_id": 4,
+        "name": "Charlie",
+        "age": 34,
+        "student_class": "PhD",
+        "section": "C",
+        "marks": {
+            "Bio": 98.0
+        }
+    }
+]

@@ -5,7 +5,7 @@ manager = StudentManager()
 
 manager.add_student(Student(101, "Shivam", 16, "FY BSc", "A"))
 manager.add_student(Student(102, "Pradnya", 17, "SY BSc", "B"))
-manager.add_student(Student(103, "Shivam", 20, "TY BSc", "C"))
+manager.add_student(Student(103, "Ajay", 20, "TY BSc", "C"))
 
 manager.view_students()
 manager.total_students()
@@ -58,6 +58,22 @@ else:
 manager.add_marks(101, "Maths", 85)
 manager.add_marks(101, "Science", 90)
 manager.add_marks(101, "Python", 95)
+
+manager.add_marks(103, "Maths", 77)
+manager.add_marks(103, "Science", 78)
+manager.add_marks(104, "Python", 85)
+
 manager.show_report_card(101)
+manager.show_report_card(103)
+
+# Class level report
+print("="*50)
+print("Class Report")
+print("="*50)
+topper = manager.topper()
+print(topper.name, f"{topper.percentage:.2f}%")
+
+print(f"Pass Percentage: {manager.pass_percentage():.2f}%")
+
 
 print("\n")

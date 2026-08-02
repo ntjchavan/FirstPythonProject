@@ -141,10 +141,3 @@ class Student:
 
         print("="*50)
 
-
-class RegularStudent(Student):
-    pass
-
-class ScholarshipStudent(Student):
-    pass
-
