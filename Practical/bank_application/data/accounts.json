@@ -1,0 +1,31 @@
+[
+    {
+        "account_number": "ACC-001",
+        "account_type": "savings",
+        "balance": 50000.0,
+        "transactions": []
+    },
+    {
+        "account_number": "ACC-002",
+        "account_type": "savings",
+        "balance": 27400.0,
+        "transactions": [
+            {
+                "transaction_id": "TXN0001",
+                "transaction_type": "Deposit",
+                "amount": 2400.0,
+                "status": "Success",
+                "source_account": "ACC-002",
+                "destination_account": null,
+                "description": "Cash Deposit",
+                "timestamp": "2026-08-09T23:47:17.806750"
+            }
+        ]
+    },
+    {
+        "account_number": "ACC-003",
+        "account_type": "current",
+        "balance": 28500.0,
+        "transactions": []
+    }
+]

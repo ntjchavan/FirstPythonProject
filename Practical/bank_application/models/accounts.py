@@ -3,8 +3,11 @@ from enums.transaction_types import TransactionTypes
 
 from models.transaction import Transaction
 
-from exceptions.account_exceptions import InsufficientBalanceException
-from exceptions.account_exceptions import InvalidAccountException
+from exceptions.account_exceptions import (
+    InsufficientBalanceException,
+    InvalidAccountException
+)
+# from exceptions.account_exceptions import InvalidAccountException
 
 class BankAccount:
 
@@ -26,17 +29,17 @@ class BankAccount:
         if amount <= 0:
             raise InvalidAccountException("Deposit amount must be greater that zero.")
 
-        transaction = Transaction(
-            self._generate_transaction_id(),
-            TransactionTypes.DEPOSIT,
-            amount
-        )
+        # transaction = Transaction(
+        #     self._generate_transaction_id(),
+        #     TransactionTypes.DEPOSIT,
+        #     amount
+        # )
         
         self.balance += amount
 
-        transaction.mark_success()
+        # transaction.mark_success()
 
-        self.transactions.append(transaction)
+        # self.transactions.append(transaction)
 
     def withdraw(self, amount) -> None:
         if amount <= 0:
@@ -45,18 +48,21 @@ class BankAccount:
         if amount > self.balance:
             raise InsufficientBalanceException(f"Insufficient balance in account {self.account_number}.")
 
-        transaction = Transaction(
-            self._generate_transaction_id(),
-            TransactionTypes.WITHDRAW,
-            amount
-        )
+        # transaction = Transaction(
+        #     self._generate_transaction_id(),
+        #     TransactionTypes.WITHDRAW,
+        #     amount
+        # )
         
         self.balance -= amount
 
-        transaction.mark_success()
+        # transaction.mark_success()
 
-        self.transactions.append(transaction)
+        # self.transactions.append(transaction)
     
+    def add_transaction(self, transaction: Transaction) -> None:
+        self.transactions.append(transaction)
+
     def get_balance(self) -> float:
         return self.balance
 
@@ -69,5 +75,33 @@ class BankAccount:
             f"Account Type: {self.account_type}, "
             f"Baance: {self.balance:.2f}"
         )
-    
+
+    def to_dict(self) -> dict:
+        return {
+            "account_number": self.account_number,
+            "account_type": self.account_type.value,
+            "balance": self.balance,
+            "transactions":[
+                transaction.to_dict()
+                for transaction in self.transactions
+            ]
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict):
+        account = cls(
+            account_number = data["account_number"],
+            account_type = AccountTypes(data["account_type"]),
+            balance =float(data["balance"])
+        )
+
+        account.transactions = [
+            Transaction.from_dict(transaction)
+            for transaction in data.get(
+                "transactions", 
+                []
+            )
+        ]
+
+        return account
     
