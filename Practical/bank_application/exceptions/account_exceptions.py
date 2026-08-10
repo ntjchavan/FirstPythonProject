@@ -10,3 +10,7 @@ class InvalidAccountException(Exception):
 
 class AccountNotFoundException(Exception):
     """Raised when an account cannot be found"""
+
+class AccountAlreadyExistsException(Exception):
+    """Raised when as account already exists"""
+    

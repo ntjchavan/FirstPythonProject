@@ -15,7 +15,6 @@ class TransactionContext:
         self.destination_transaction = list(destination.transactions)
 
     def __enter__(self):
-        print("\nTransaction started.")
         return self
 
     def __exit__(self, exc_type, exc_value, tracebook):
