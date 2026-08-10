@@ -295,3 +295,9 @@ Packaging, virtual environments, and dependency management.
 Dockerizing Python applications and deploying them to Azure or other cloud platforms.
 
 This approach will let you leverage your existing experience in .NET while becoming productive in Python much faster.
+
+
+
+I am learning python and I completed basics in week 1 and week 2. if you can access then check my latest chat. In week 3, I want to cover below point. Week 3 : OOP
+
+As you know that I am learning python. you can refer another chats. Now I am in week for i.e. Week 4 – File Handling & Exception Handling (Advanced) & it has below points. can we discuss on this 1 by 1?
