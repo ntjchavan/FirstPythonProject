@@ -102,6 +102,48 @@ def deposit_money(transaction_service: TransactionService):
     except (ValueError, AccountException) as err:
         print(f"Error: {err}")
 
+def withdraw_money(transaction_service: TransactionService):
+    print("\n------------ Withdraw Money --------------")
+    account_number = input("Enter account number: ").strip()
+
+    try:
+        amount = float(input("Enter withdraw amount: "))
+
+        transaction = transaction_service.withdraw(account_number, amount)
+
+        print("\nWithdraw Successfull!")
+
+        print(transaction)
+    except (ValueError, AccountException) as err:
+        print(f"Error: {err}")
+
+def transfer_money(transaction_service: TransactionService):
+    print("\n------------- Transfer Money ----------------")
+    source_account_number = input("Enter source account number: ").strip()
+    destination_account_number = input("Enter destination account number: ").strip()
+
+    try:
+        amount = float(input("Enter money to transfer: ").strip())
+
+        transaction = transaction_service.transfer(source_account_number, destination_account_number, amount)
+
+        print("\nTransfer successfull!")
+        print(transaction)
+    except (ValueError, AccountException) as err:
+        print(f"Error: {err}")
+
+def transaction_history(transaction_service: TransactionService):
+    print("\n---------------- Transaction History ----------------")
+    account_number = input("Enter account number: ").strip()
+
+    transactions = transaction_service.get_account_transaction(account_number)
+
+    if not transactions:
+        print("No transaction found.")
+        return
+
+    for transaction in transactions:
+        print(transaction)
 
 def main():
     bank_repository = BankRepository()
@@ -137,6 +179,15 @@ def main():
 
             case "4":
                 deposit_money(transaction_service)
+
+            case "5":
+                withdraw_money(transaction_service)
+
+            case "6":
+                transfer_money(transaction_service)
+
+            case "7":
+                transaction_history(transaction_service)
 
             case "9":
                 print("\nThank you for using Python Banking application!")

@@ -52,7 +52,7 @@ class TransactionService:
         account.withdraw(amount)
 
         transaction = Transaction(
-            transaction_id= self._generate_transaction_id(),
+            transaction_id = self._generate_transaction_id(),
             transaction_type=TransactionTypes.WITHDRAW,
             amount= amount,
             status=TransactionStatus.SUCCESS,
@@ -74,7 +74,7 @@ class TransactionService:
         source_account_number: str,
         destination_account_number: str,
         amount: float
-    ) -> None:
+    ) -> Transaction:
 
         source = self.bank_services.get_account(source_account_number)
 
@@ -105,6 +105,8 @@ class TransactionService:
             self.audit_service.record(transaction)
 
             self.bank_services.save_accounts()
+
+        return transaction
 
     def get_account_transaction(self, account_number: str) -> list[Transaction]:
 
