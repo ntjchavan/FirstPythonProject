@@ -1,0 +1,10 @@
+{
+    "application": {
+        "name": "Bank Application",
+        "version": "1.0"
+    },
+    "database": {
+        "host": "localhost",
+        "port": 5432
+    }
+}
